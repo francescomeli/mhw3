@@ -1,0 +1,294 @@
+a{
+    cursor: pointer;
+    color: white;
+    margin: 30px;
+}
+
+#button{
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px; 
+}
+
+#button:hover{
+    background-color: white;
+    color:  rgba(0, 0, 0, 0.3);
+}
+
+#link{
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);   /*come da richiesta*/
+    z-index: 1;
+  }
+
+#immagine1{
+    background-image: url(https://www.nonsprecare.it/wp-content/uploads/2016/09/BENEFICI-NUOTO.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    z-index: 0;
+}
+
+#immagine2{
+    background-image: url(https://i.pinimg.com/originals/b0/17/ce/b017cea2587c9eca04aa59c1109d8898.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    z-index: 0;
+}
+
+header{
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+body{
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header h1{
+    position: absolute;
+    top: 40%;
+    font-family: 'FreeMono', monospace;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+h2{
+    font-family: 'Snell Roundhand', cursive;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#offerte {
+    display: flex;
+    justify-content: space-between;
+}
+
+#offerte div {
+    flex-grow: 1;
+    padding-left: 1em;  
+    padding-right: 1em;
+}
+  
+#offerte img {
+    width: 100%;
+    height: 80%;
+    border: 4px solid gray ;
+    cursor: pointer;
+}
+#offerte img:hover{
+    opacity: 0.8;
+}
+  
+#offerte p {
+    font-family: 'Gill Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+#corso p{
+    color: green;
+}
+#piscine p{
+    color: white;
+}
+#relax p{
+    color: red;
+}
+#offerte p.descrizione{
+    font-family: 'Stencil Std', fantasy;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+section{
+    height: 700px;
+}
+section p{
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#main {
+    text-align: center;
+    color: white;
+}
+#main p{
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer address{
+    padding-top: 20px;
+}
+footer p{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-family: 'Apple Chancery', cursive;
+}
+
+section h2{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+section p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 80px;
+}
+
+#ricerca{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+#risultato h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.icona{
+    position: absolute;
+    top: 1560px;
+    left: 35%;
+    width: 120px;
+    height: 200px;
+}
+.foto{
+    position: absolute;
+    top: 1730px;
+    left: 130px;
+    width: 200px;
+    height: 220px;
+    border: 4px solid black;
+}
+#risultato p{
+    position: absolute;
+    top: 1730px;
+    left: 370px;
+    right: 40px;
+    color: black;
+    font-size: 18px;
+}
+
+/*PARTE MOBILE*/
+#menu {
+    display: none;
+}
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0px;
+}
+
+@media(max-width: 1450px){
+    .icona{
+        display: none;
+    }
+}
+
+@media (max-width: 970px){
+    #link{
+        display: none;
+    }
+    #menu{
+        display: block;
+        padding-top: 15px;
+        padding-right: 85%;
+    }
+}
+
+@media(max-width: 850px){
+    .foto{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        top: 0px;
+        left: 0px;
+    }
+    #risultato p{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    section{
+        height: calc(100%);
+    }
+    section h2{
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 700px){
+    #offerte{
+        flex-direction: column;
+        align-items: center;
+    }
+    #offerte img{
+        width: 50%;
+        height: 80%;
+        border: 4px solid gray ;
+        cursor: pointer;
+        margin-left: 25%;
+    }
+}
