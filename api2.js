@@ -1,7 +1,3 @@
-//Credenziali mie spotify
-const client_id="15355e34f1ec424e93e84a102f5a39dc";
-const client_secret="201267ce8ee3437cb6ccac749de415f7";
-
 function onJson(json) {
     const lista = document.querySelector("#risultato");
     lista.innerHTML = '';
